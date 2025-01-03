@@ -1,0 +1,139 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Bodoni Moda', serif; /* Updated to Bodoni */
+    line-height: 1.6;
+    background: linear-gradient(to right, #ff7e5f, #feb47b); /* Gradient background */
+    color: #333;
+    padding: 0;
+    margin: 0;
+}
+
+/* Container to center content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header Section */
+header {
+    background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+    padding: 50px 0;
+    text-align: center;
+    color: white;
+}
+
+header h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+    color: #ffcc00; /* Bright color for the header */
+}
+
+.tagline {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 300;
+    color: #ffcc00; /* Bright color for tagline */
+}
+
+.cta-btn {
+    display: inline-block;
+    background-color: #FF6F61; /* Call-to-action button color */
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #e55b52;
+    transform: scale(1.05);
+}
+
+/* Features Section */
+#features {
+    background-color: #ffffff;
+    padding: 40px 0;
+}
+
+#features h2 {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #f9f9f9; /* Light card background */
+    border-radius: 10px;
+    padding: 20px;
+    width: 23%;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card h3 {
+    font-size: 22px;
+    color: #4CAF50; /* Green color for card titles */
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* Benefits Section */
+#benefits {
+    background-color: #f4f8fb; /* Light background for benefits */
+    padding: 40px 0;
+    text-align: center;
+}
+
+#benefits h2 {
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#benefits ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#benefits ul li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .feature-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
